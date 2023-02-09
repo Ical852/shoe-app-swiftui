@@ -12,6 +12,7 @@ struct SwiftLearnApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(AuthUser())
         }
     }
 }

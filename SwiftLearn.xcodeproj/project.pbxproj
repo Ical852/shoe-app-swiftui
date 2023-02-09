@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF15193D294F61C20068525F /* GetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15193C294F61C20068525F /* GetStartedView.swift */; };
+		FF151941294F6DE00068525F /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF15193E294F6DE00068525F /* Poppins-Bold.ttf */; };
+		FF151942294F6DE00068525F /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF15193E294F6DE00068525F /* Poppins-Bold.ttf */; };
+		FF151943294F6DE00068525F /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF15193E294F6DE00068525F /* Poppins-Bold.ttf */; };
+		FF151944294F6DE00068525F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF15193F294F6DE00068525F /* Poppins-Regular.ttf */; };
+		FF151945294F6DE00068525F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF15193F294F6DE00068525F /* Poppins-Regular.ttf */; };
+		FF151946294F6DE00068525F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF15193F294F6DE00068525F /* Poppins-Regular.ttf */; };
+		FF151947294F6DE00068525F /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF151940294F6DE00068525F /* Poppins-SemiBold.ttf */; };
+		FF151948294F6DE00068525F /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF151940294F6DE00068525F /* Poppins-SemiBold.ttf */; };
+		FF151949294F6DE00068525F /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF151940294F6DE00068525F /* Poppins-SemiBold.ttf */; };
+		FF27F38D2974EBD4003D70E9 /* BikeStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF27F38C2974EBD4003D70E9 /* BikeStoreView.swift */; };
 		FF643DFB2917EEBD006BD33C /* SwiftLearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF643DFA2917EEBD006BD33C /* SwiftLearnApp.swift */; };
 		FF643DFD2917EEBD006BD33C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF643DFC2917EEBD006BD33C /* ContentView.swift */; };
 		FF643DFF2917EEBF006BD33C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF643DFE2917EEBF006BD33C /* Assets.xcassets */; };
@@ -14,6 +25,28 @@
 		FF643E0C2917EEBF006BD33C /* SwiftLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF643E0B2917EEBF006BD33C /* SwiftLearnTests.swift */; };
 		FF643E162917EEBF006BD33C /* SwiftLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF643E152917EEBF006BD33C /* SwiftLearnUITests.swift */; };
 		FF643E182917EEBF006BD33C /* SwiftLearnUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF643E172917EEBF006BD33C /* SwiftLearnUITestsLaunchTests.swift */; };
+		FF655253297BA26400F953F9 /* EnvGlobalStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF655252297BA26400F953F9 /* EnvGlobalStateView.swift */; };
+		FF655255297BA50B00F953F9 /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF655254297BA50B00F953F9 /* AuthUser.swift */; };
+		FF6E5DCB2988BAC4001BE5E7 /* ShoesDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E5DCA2988BAC4001BE5E7 /* ShoesDataView.swift */; };
+		FF6E5DCD2988BAD4001BE5E7 /* Shoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E5DCC2988BAD4001BE5E7 /* Shoes.swift */; };
+		FF6E5DCF2988C52E001BE5E7 /* ShoeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E5DCE2988C52E001BE5E7 /* ShoeService.swift */; };
+		FF78CB482963EED8009CD799 /* StarAppsSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF78CB472963EED8009CD799 /* StarAppsSignInView.swift */; };
+		FF8D0B39297D64CA00DA03D5 /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D0B38297D64CA00DA03D5 /* GeometryReaderView.swift */; };
+		FF8F5222295D4F4300E99AA0 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8F5221295D4F4300E99AA0 /* Poppins-Medium.ttf */; };
+		FF8F5223295D4F4300E99AA0 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8F5221295D4F4300E99AA0 /* Poppins-Medium.ttf */; };
+		FF8F5224295D4F4300E99AA0 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8F5221295D4F4300E99AA0 /* Poppins-Medium.ttf */; };
+		FFA05144297E29B900A83399 /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA05143297E29B900A83399 /* DragGestureView.swift */; };
+		FFA05146297E337900A83399 /* DrawShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA05145297E337900A83399 /* DrawShapeView.swift */; };
+		FFA05148297E456100A83399 /* FetchGetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA05147297E456100A83399 /* FetchGetView.swift */; };
+		FFA0514C297E45C700A83399 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0514B297E45C700A83399 /* Post.swift */; };
+		FFA0514E297E463200A83399 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA0514D297E463200A83399 /* ApiService.swift */; };
+		FFAE82012962B5E700326A84 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAE82002962B5E700326A84 /* DetailView.swift */; };
+		FFD0BD42295A94EA00D175EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0BD41295A94EA00D175EF /* HomeView.swift */; };
+		FFD0BD43295A94EA00D175EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0BD41295A94EA00D175EF /* HomeView.swift */; };
+		FFD0BD44295A94EA00D175EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0BD41295A94EA00D175EF /* HomeView.swift */; };
+		FFF646DC297A6A10004FDF76 /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF646DB297A6A10004FDF76 /* GlobalState.swift */; };
+		FFFB2913296EFC8200BE3903 /* YoutubeClone.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFB2912296EFC8200BE3903 /* YoutubeClone.swift */; };
+		FFFB3A5C296508660004E9F1 /* FormNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFB3A5B296508660004E9F1 /* FormNavView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +67,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF15193C294F61C20068525F /* GetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedView.swift; sourceTree = "<group>"; };
+		FF15193E294F6DE00068525F /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		FF15193F294F6DE00068525F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		FF151940294F6DE00068525F /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		FF15194A294F6E2E0068525F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF27F38C2974EBD4003D70E9 /* BikeStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStoreView.swift; sourceTree = "<group>"; };
 		FF643DF72917EEBD006BD33C /* SwiftLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF643DFA2917EEBD006BD33C /* SwiftLearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearnApp.swift; sourceTree = "<group>"; };
 		FF643DFC2917EEBD006BD33C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +83,24 @@
 		FF643E112917EEBF006BD33C /* SwiftLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF643E152917EEBF006BD33C /* SwiftLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearnUITests.swift; sourceTree = "<group>"; };
 		FF643E172917EEBF006BD33C /* SwiftLearnUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLearnUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF655252297BA26400F953F9 /* EnvGlobalStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvGlobalStateView.swift; sourceTree = "<group>"; };
+		FF655254297BA50B00F953F9 /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
+		FF6E5DCA2988BAC4001BE5E7 /* ShoesDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesDataView.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		FF6E5DCC2988BAD4001BE5E7 /* Shoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes.swift; sourceTree = "<group>"; };
+		FF6E5DCE2988C52E001BE5E7 /* ShoeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeService.swift; sourceTree = "<group>"; };
+		FF78CB472963EED8009CD799 /* StarAppsSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarAppsSignInView.swift; sourceTree = "<group>"; };
+		FF8D0B38297D64CA00DA03D5 /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
+		FF8F5221295D4F4300E99AA0 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		FFA05143297E29B900A83399 /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
+		FFA05145297E337900A83399 /* DrawShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawShapeView.swift; sourceTree = "<group>"; };
+		FFA05147297E456100A83399 /* FetchGetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGetView.swift; sourceTree = "<group>"; };
+		FFA0514B297E45C700A83399 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FFA0514D297E463200A83399 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		FFAE82002962B5E700326A84 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FFD0BD41295A94EA00D175EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FFF646DB297A6A10004FDF76 /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
+		FFFB2912296EFC8200BE3903 /* YoutubeClone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeClone.swift; sourceTree = "<group>"; };
+		FFFB3A5B296508660004E9F1 /* FormNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormNavView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +151,30 @@
 		FF643DF92917EEBD006BD33C /* SwiftLearn */ = {
 			isa = PBXGroup;
 			children = (
+				FFA0514A297E45A900A83399 /* WebServices */,
+				FFA05149297E45A100A83399 /* Models */,
+				FF15194A294F6E2E0068525F /* Info.plist */,
+				FF15193E294F6DE00068525F /* Poppins-Bold.ttf */,
+				FF15193F294F6DE00068525F /* Poppins-Regular.ttf */,
+				FF8F5221295D4F4300E99AA0 /* Poppins-Medium.ttf */,
+				FF151940294F6DE00068525F /* Poppins-SemiBold.ttf */,
 				FF643DFA2917EEBD006BD33C /* SwiftLearnApp.swift */,
 				FF643DFC2917EEBD006BD33C /* ContentView.swift */,
+				FF15193C294F61C20068525F /* GetStartedView.swift */,
+				FFD0BD41295A94EA00D175EF /* HomeView.swift */,
+				FFAE82002962B5E700326A84 /* DetailView.swift */,
+				FF78CB472963EED8009CD799 /* StarAppsSignInView.swift */,
+				FFFB3A5B296508660004E9F1 /* FormNavView.swift */,
+				FFFB2912296EFC8200BE3903 /* YoutubeClone.swift */,
+				FF27F38C2974EBD4003D70E9 /* BikeStoreView.swift */,
+				FFF646DB297A6A10004FDF76 /* GlobalState.swift */,
+				FF655252297BA26400F953F9 /* EnvGlobalStateView.swift */,
+				FF655254297BA50B00F953F9 /* AuthUser.swift */,
+				FF8D0B38297D64CA00DA03D5 /* GeometryReaderView.swift */,
+				FFA05143297E29B900A83399 /* DragGestureView.swift */,
+				FFA05145297E337900A83399 /* DrawShapeView.swift */,
+				FFA05147297E456100A83399 /* FetchGetView.swift */,
+				FF6E5DCA2988BAC4001BE5E7 /* ShoesDataView.swift */,
 				FF643DFE2917EEBF006BD33C /* Assets.xcassets */,
 				FF643E002917EEBF006BD33C /* Preview Content */,
 			);
@@ -125,6 +204,24 @@
 				FF643E172917EEBF006BD33C /* SwiftLearnUITestsLaunchTests.swift */,
 			);
 			path = SwiftLearnUITests;
+			sourceTree = "<group>";
+		};
+		FFA05149297E45A100A83399 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFA0514B297E45C700A83399 /* Post.swift */,
+				FF6E5DCC2988BAD4001BE5E7 /* Shoes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FFA0514A297E45A900A83399 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				FFA0514D297E463200A83399 /* ApiService.swift */,
+				FF6E5DCE2988C52E001BE5E7 /* ShoeService.swift */,
+			);
+			path = WebServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +328,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF151947294F6DE00068525F /* Poppins-SemiBold.ttf in Resources */,
 				FF643E022917EEBF006BD33C /* Preview Assets.xcassets in Resources */,
+				FF151941294F6DE00068525F /* Poppins-Bold.ttf in Resources */,
+				FF8F5222295D4F4300E99AA0 /* Poppins-Medium.ttf in Resources */,
 				FF643DFF2917EEBF006BD33C /* Assets.xcassets in Resources */,
+				FF151944294F6DE00068525F /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +341,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF151948294F6DE00068525F /* Poppins-SemiBold.ttf in Resources */,
+				FF8F5223295D4F4300E99AA0 /* Poppins-Medium.ttf in Resources */,
+				FF151942294F6DE00068525F /* Poppins-Bold.ttf in Resources */,
+				FF151945294F6DE00068525F /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +352,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF151949294F6DE00068525F /* Poppins-SemiBold.ttf in Resources */,
+				FF8F5224295D4F4300E99AA0 /* Poppins-Medium.ttf in Resources */,
+				FF151943294F6DE00068525F /* Poppins-Bold.ttf in Resources */,
+				FF151946294F6DE00068525F /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +367,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF643DFD2917EEBD006BD33C /* ContentView.swift in Sources */,
+				FFD0BD42295A94EA00D175EF /* HomeView.swift in Sources */,
+				FF6E5DCB2988BAC4001BE5E7 /* ShoesDataView.swift in Sources */,
+				FFA05148297E456100A83399 /* FetchGetView.swift in Sources */,
+				FF78CB482963EED8009CD799 /* StarAppsSignInView.swift in Sources */,
+				FFA0514C297E45C700A83399 /* Post.swift in Sources */,
+				FFFB2913296EFC8200BE3903 /* YoutubeClone.swift in Sources */,
+				FF15193D294F61C20068525F /* GetStartedView.swift in Sources */,
+				FF27F38D2974EBD4003D70E9 /* BikeStoreView.swift in Sources */,
+				FF8D0B39297D64CA00DA03D5 /* GeometryReaderView.swift in Sources */,
+				FFF646DC297A6A10004FDF76 /* GlobalState.swift in Sources */,
+				FFAE82012962B5E700326A84 /* DetailView.swift in Sources */,
+				FFA05146297E337900A83399 /* DrawShapeView.swift in Sources */,
+				FF655253297BA26400F953F9 /* EnvGlobalStateView.swift in Sources */,
+				FFA05144297E29B900A83399 /* DragGestureView.swift in Sources */,
+				FF6E5DCF2988C52E001BE5E7 /* ShoeService.swift in Sources */,
+				FFA0514E297E463200A83399 /* ApiService.swift in Sources */,
 				FF643DFB2917EEBD006BD33C /* SwiftLearnApp.swift in Sources */,
+				FF655255297BA50B00F953F9 /* AuthUser.swift in Sources */,
+				FFFB3A5C296508660004E9F1 /* FormNavView.swift in Sources */,
+				FF6E5DCD2988BAD4001BE5E7 /* Shoes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF643E0C2917EEBF006BD33C /* SwiftLearnTests.swift in Sources */,
+				FFD0BD43295A94EA00D175EF /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD0BD44295A94EA00D175EF /* HomeView.swift in Sources */,
 				FF643E162917EEBF006BD33C /* SwiftLearnUITests.swift in Sources */,
 				FF643E182917EEBF006BD33C /* SwiftLearnUITestsLaunchTests.swift in Sources */,
 			);
@@ -420,6 +550,7 @@
 				DEVELOPMENT_TEAM = 6JD2XPRD65;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftLearn/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +580,7 @@
 				DEVELOPMENT_TEAM = 6JD2XPRD65;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftLearn/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
