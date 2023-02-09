@@ -16,6 +16,9 @@ class ShoesService: ObservableObject {
     @Published var popLoading: Bool = false
     @Published var naLoading: Bool = false
     
+    @Published var webReady: Bool = false
+    @Published var transaction: TransactionResponse?
+    
     init() {
         self.bsLoading = true
         self.popLoading = true
@@ -108,5 +111,44 @@ class ShoesService: ObservableObject {
                 }
             }.resume()
         }
+    }
+    
+    func createTransaction(request: TransactionRequest) {
+        print("Hitted Section 1")
+        guard let url = URL(string: "http://192.168.100.17:8000/api/transaction") else {
+            return
+        }
+        
+        guard let findalBody = try? JSONEncoder().encode(request) else {
+            return
+        }
+        
+        print("Hitted Section 2")
+        
+        var urlRequest = URLRequest(url: url)
+        
+        urlRequest.setValue("application/json", forHTTPHeaderField: "Content_Type")
+        urlRequest.httpMethod = "POST"
+        urlRequest.httpBody = findalBody
+        
+        print("Hitted Section 3")
+        
+        URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+            print("Hitted Section 4")
+            guard let data = data, error == nil else {return}
+            
+            let result = try? JSONDecoder().decode(TransactionResponse.self, from: data)
+            if let result = result {
+                print("Hitted Section 6")
+                DispatchQueue.main.async {
+                    self.transaction = result
+                    self.webReady = true
+                }
+            }
+        }.resume()
+    }
+    
+    func closeWebview() {
+        self.webReady = false
     }
 }

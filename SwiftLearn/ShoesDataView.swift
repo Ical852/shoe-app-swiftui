@@ -6,34 +6,68 @@
 //
 
 import SwiftUI
+import WebKit
 
 struct ShoesDataView: View {
     @ObservedObject var fetch = ShoesService()
     
     var body: some View {
-        ZStack {
-            VStack(alignment: .leading, spacing: 0.0) {
-                ScrollView(showsIndicators: false, content: {
-                    HeadContent()
-                    
-                    BestSellerSection(shoes: fetch.bestSeller?.data ?? [], loading: fetch.bsLoading)
-                    
-                    SuperRareSection()
-                    
-                    PopularSection(shoes: fetch.popular?.data ?? [], loading: fetch.popLoading)
-                    
-                    CategorySection(fetch: fetch)
-                    
-                    NewArivalSection(shoes: fetch.newArrivals?.data ?? [], loading: fetch.naLoading)
-                    
-                    VStack {}.frame(height: 100)
-                })
-                
-                Spacer()
-                
-                BottomMenu()
+        return Group {
+            if (fetch.webReady == true) {
+                VStack {
+                    HStack {
+                        Text("Payment")
+                            .foregroundColor(Color.black)
+                            .font(.custom("poppins-semibold", fixedSize: 16))
+                        
+                        Spacer()
+                        
+                        Button(
+                            action: {
+                                fetch.closeWebview()
+                            }, label: {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .frame(width: 120, height: 40)
+                                        .foregroundColor(Color("NewOrange"))
+                                    
+                                    Text("Done")
+                                        .foregroundColor(Color.white)
+                                        .font(.custom("poppins-semibold", fixedSize: 14))
+                                }
+                            }
+                        )
+                    }
+                    .frame(height: 50)
+                    .padding(.horizontal, 24)
+                    WebView(url: URL(string: fetch.transaction?.data.payment_url ?? "")!)
+                }
+            } else {
+                ZStack {
+                    VStack(alignment: .leading, spacing: 0.0) {
+                        ScrollView(showsIndicators: false, content: {
+                            HeadContent()
+
+                            BestSellerSection(shoes: fetch.bestSeller?.data ?? [], loading: fetch.bsLoading)
+
+                            SuperRareSection()
+
+                            PopularSection(shoes: fetch.popular?.data ?? [], loading: fetch.popLoading)
+
+                            CategorySection(fetch: fetch)
+
+                            NewArivalSection(fetch: fetch, shoes: fetch.newArrivals?.data ?? [], loading: fetch.naLoading)
+
+                            VStack {}.frame(height: 100)
+                        })
+
+                        Spacer()
+
+                        BottomMenu()
+                    }
+                    .edgesIgnoringSafeArea(.top)
+                }
             }
-            .edgesIgnoringSafeArea(.top)
         }
     }
 }
@@ -488,6 +522,7 @@ struct CategoryItem: View {
 }
 
 struct NewArivalSection: View {
+    @ObservedObject var fetch: ShoesService
     var shoes: [Products]
     var loading: Bool
     
@@ -522,7 +557,9 @@ struct NewArivalSection: View {
             }
             
             ForEach(shoes) { shoe in
-                NewArivalItem(product: shoe, onPress: {})
+                NewArivalItem(product: shoe, onPress: {
+                    fetch.createTransaction(request: TransactionRequest(user_id: 1, order_id: randomString(length: 10), gross_amount: shoe.price, pay_method: "midtrans", td_detail: [TransactionDetailRequest(product_id: shoe.id, qty: 1)]))
+                })
             }
             
         }
@@ -687,6 +724,24 @@ struct Indicator : UIViewRepresentable {
     func updateUIView(_ uiView: UIActivityIndicatorView, context: UIViewRepresentableContext<Indicator>) {
         uiView.startAnimating()
     }
+}
+
+struct WebView: UIViewRepresentable {
+    var url: URL
+    
+    func makeUIView(context: Context) -> WKWebView {
+        return WKWebView()
+    }
+    
+    func updateUIView(_ webView: WKWebView, context: Context) {
+        let request = URLRequest(url: url)
+        webView.load(request)
+    }
+}
+
+func randomString(length: Int) -> String {
+  let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+  return String((0..<length).map{ _ in letters.randomElement()! })
 }
 
 struct ShoesDataView_Previews: PreviewProvider {
