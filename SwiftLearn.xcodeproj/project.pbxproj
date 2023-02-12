@@ -35,6 +35,9 @@
 		FF8F5222295D4F4300E99AA0 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8F5221295D4F4300E99AA0 /* Poppins-Medium.ttf */; };
 		FF8F5223295D4F4300E99AA0 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8F5221295D4F4300E99AA0 /* Poppins-Medium.ttf */; };
 		FF8F5224295D4F4300E99AA0 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF8F5221295D4F4300E99AA0 /* Poppins-Medium.ttf */; };
+		FF938BF52998A42600E3BA3D /* CounterMVVMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF938BF42998A42600E3BA3D /* CounterMVVMView.swift */; };
+		FF938BF82998A6C300E3BA3D /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF938BF72998A6C300E3BA3D /* Counter.swift */; };
+		FF938BFB2998A82400E3BA3D /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF938BFA2998A82400E3BA3D /* CounterViewModel.swift */; };
 		FFA05144297E29B900A83399 /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA05143297E29B900A83399 /* DragGestureView.swift */; };
 		FFA05146297E337900A83399 /* DrawShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA05145297E337900A83399 /* DrawShapeView.swift */; };
 		FFA05148297E456100A83399 /* FetchGetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA05147297E456100A83399 /* FetchGetView.swift */; };
@@ -91,6 +94,9 @@
 		FF78CB472963EED8009CD799 /* StarAppsSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarAppsSignInView.swift; sourceTree = "<group>"; };
 		FF8D0B38297D64CA00DA03D5 /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		FF8F5221295D4F4300E99AA0 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		FF938BF42998A42600E3BA3D /* CounterMVVMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterMVVMView.swift; sourceTree = "<group>"; };
+		FF938BF72998A6C300E3BA3D /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		FF938BFA2998A82400E3BA3D /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		FFA05143297E29B900A83399 /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
 		FFA05145297E337900A83399 /* DrawShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawShapeView.swift; sourceTree = "<group>"; };
 		FFA05147297E456100A83399 /* FetchGetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGetView.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 		FF643DF92917EEBD006BD33C /* SwiftLearn */ = {
 			isa = PBXGroup;
 			children = (
+				FF938BF22998A40800E3BA3D /* MVVMLearn */,
 				FFA0514A297E45A900A83399 /* WebServices */,
 				FFA05149297E45A100A83399 /* Models */,
 				FF15194A294F6E2E0068525F /* Info.plist */,
@@ -204,6 +211,40 @@
 				FF643E172917EEBF006BD33C /* SwiftLearnUITestsLaunchTests.swift */,
 			);
 			path = SwiftLearnUITests;
+			sourceTree = "<group>";
+		};
+		FF938BF22998A40800E3BA3D /* MVVMLearn */ = {
+			isa = PBXGroup;
+			children = (
+				FF938BF92998A7D500E3BA3D /* ViewModels */,
+				FF938BF62998A6B400E3BA3D /* Models */,
+				FF938BF32998A41300E3BA3D /* View */,
+			);
+			path = MVVMLearn;
+			sourceTree = "<group>";
+		};
+		FF938BF32998A41300E3BA3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF938BF42998A42600E3BA3D /* CounterMVVMView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF938BF62998A6B400E3BA3D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF938BF72998A6C300E3BA3D /* Counter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF938BF92998A7D500E3BA3D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FF938BFA2998A82400E3BA3D /* CounterViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		FFA05149297E45A100A83399 /* Models */ = {
@@ -370,6 +411,8 @@
 				FFD0BD42295A94EA00D175EF /* HomeView.swift in Sources */,
 				FF6E5DCB2988BAC4001BE5E7 /* ShoesDataView.swift in Sources */,
 				FFA05148297E456100A83399 /* FetchGetView.swift in Sources */,
+				FF938BF82998A6C300E3BA3D /* Counter.swift in Sources */,
+				FF938BFB2998A82400E3BA3D /* CounterViewModel.swift in Sources */,
 				FF78CB482963EED8009CD799 /* StarAppsSignInView.swift in Sources */,
 				FFA0514C297E45C700A83399 /* Post.swift in Sources */,
 				FFFB2913296EFC8200BE3903 /* YoutubeClone.swift in Sources */,
@@ -383,6 +426,7 @@
 				FFA05144297E29B900A83399 /* DragGestureView.swift in Sources */,
 				FF6E5DCF2988C52E001BE5E7 /* ShoeService.swift in Sources */,
 				FFA0514E297E463200A83399 /* ApiService.swift in Sources */,
+				FF938BF52998A42600E3BA3D /* CounterMVVMView.swift in Sources */,
 				FF643DFB2917EEBD006BD33C /* SwiftLearnApp.swift in Sources */,
 				FF655255297BA50B00F953F9 /* AuthUser.swift in Sources */,
 				FFFB3A5C296508660004E9F1 /* FormNavView.swift in Sources */,

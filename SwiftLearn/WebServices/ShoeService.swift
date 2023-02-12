@@ -24,11 +24,13 @@ class ShoesService: ObservableObject {
         self.popLoading = true
         
         guard let url = URL(string: "http://192.168.100.17:8000/api/products/cat/1") else {
+            print("ERROR ANJING")
             fatalError("INVALID URL")
         }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else {
+                print("ERROR ANJING")
                 return
             }
             
@@ -43,11 +45,13 @@ class ShoesService: ObservableObject {
         }.resume()
         
         guard let url2 = URL(string: "http://192.168.100.17:8000/api/products/cat/2") else {
+            print("ERROR ANJING")
             fatalError("INVALID URL")
         }
         
         URLSession.shared.dataTask(with: url2) { data, response, error in
             guard let data = data, error == nil else {
+                print("ERROR ANJING")
                 return
             }
             
@@ -68,11 +72,13 @@ class ShoesService: ObservableObject {
         self.naLoading = true
         
         guard let url3 = URL(string: "http://192.168.100.17:8000/api/products") else {
+            print("ERROR ANJING")
             fatalError("INVALID URL")
         }
         
         URLSession.shared.dataTask(with: url3) { data, response, error in
             guard let data = data, error == nil else {
+                print("ERROR ANJING")
                 return
             }
             
@@ -93,11 +99,13 @@ class ShoesService: ObservableObject {
         } else {
             self.naLoading = true
             guard let url = URL(string: "http://192.168.100.17:8000/api/products/cat/" + String(id)) else {
+                print("ERROR ANJING")
                 fatalError("INVALID URL")
             }
             
             URLSession.shared.dataTask(with: url) { data, response, error in
                 guard let data = data, error == nil else {
+                    print("ERROR ANJING")
                     return
                 }
                 
@@ -114,8 +122,8 @@ class ShoesService: ObservableObject {
     }
     
     func createTransaction(request: TransactionRequest) {
-        print("Hitted Section 1")
         guard let url = URL(string: "http://192.168.100.17:8000/api/transaction") else {
+            print("ERROR ANJING")
             return
         }
         
@@ -123,23 +131,21 @@ class ShoesService: ObservableObject {
             return
         }
         
-        print("Hitted Section 2")
-        
         var urlRequest = URLRequest(url: url)
         
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content_Type")
         urlRequest.httpMethod = "POST"
         urlRequest.httpBody = findalBody
         
-        print("Hitted Section 3")
-        
         URLSession.shared.dataTask(with: urlRequest) { data, response, error in
-            print("Hitted Section 4")
-            guard let data = data, error == nil else {return}
+            guard let data = data, error == nil else {
+                print("ERROR ANJING")
+                return
+            }
             
             let result = try? JSONDecoder().decode(TransactionResponse.self, from: data)
+            
             if let result = result {
-                print("Hitted Section 6")
                 DispatchQueue.main.async {
                     self.transaction = result
                     self.webReady = true
